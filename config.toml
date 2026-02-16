@@ -1,0 +1,22 @@
+[default]
+ADMINS = ["123456789", "987654321"]
+WEBHOOK_PATH = "/webhook"
+WEBHOOK_HOST = "127.0.0.1"
+WEBHOOK_PORT = 8080
+
+BOT_TOKEN = "@format {env[BOT_TOKEN]}"
+POSTGRES_DSN = "@format {env[POSTGRES_DSN]}"
+REDIS_PASSWORD = "@format {env[REDIS_PASSWORD]}"
+WALLET_ENCRYPTION_KEY = "@format {env[WALLET_ENCRYPTION_KEY]}"
+
+[development]
+WEBHOOK_DOMAIN = "https://31b6c28443bb.ngrok-free.app"
+REDIS_HOST = "127.0.0.1"
+REDIS_PORT = 6379
+FSM_STORAGE = "redis"
+
+[production]
+WEBHOOK_DOMAIN = "https://your-prod-domain.com"
+REDIS_HOST = "127.0.0.1"
+REDIS_PORT = 6379
+FSM_STORAGE = "redis"

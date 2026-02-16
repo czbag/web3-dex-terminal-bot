@@ -1,0 +1,19 @@
+[project]
+name = "snip"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "aiogram>=3.22.0",
+    "aiogram-dialog>=2.4.0",
+    "alembic>=1.17.0",
+    "asyncpg>=0.30.0",
+    "cryptography>=46.0.3",
+    "dynaconf>=3.2.12",
+    "loguru>=0.7.3",
+    "mnemonic>=0.21",
+    "redis>=7.0.1",
+    "sqlalchemy>=2.0.44",
+    "web3>=7.14.0",
+]
